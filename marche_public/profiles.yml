@@ -1,0 +1,12 @@
+marche_public:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: antoninsanzovo
+      password: boss
+      port: 5432
+      dbname: marches_publiques
+      schema: dbt_marche_public
+      threads: 4

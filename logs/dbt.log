@@ -1,0 +1,41 @@
+[0m15:38:59.528694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054b2740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064b4b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064b51e0>]}
+
+
+============================== 15:38:59.543165 | d0404502-94cb-4abe-b3bb-5a1e9d247d43 ==============================
+[0m15:38:59.543165 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:38:59.546838 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'log_format': 'default', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'target_path': 'None', 'empty': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'invocation_command': 'dbt init marche_public', 'version_check': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'quiet': 'False', 'no_print': 'None', 'static_parser': 'True', 'profiles_dir': '/Users/antoninsanzovo/.dbt'}
+[0m15:38:59.606565 [info ] [MainThread]: Creating dbt configuration folder at /Users/antoninsanzovo/.dbt
+[0m15:38:59.610891 [debug] [MainThread]: Starter project path: /Users/antoninsanzovo/projects/marches_publiques/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m15:38:59.630951 [info ] [MainThread]: 
+Your new dbt project "marche_public" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:38:59.633014 [info ] [MainThread]: Setting up your profile.
+[0m15:43:03.213093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103eb6710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105084b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050851e0>]}
+
+
+============================== 15:43:03.225927 | 444ff72f-67b4-4398-9076-2f1284239613 ==============================
+[0m15:43:03.225927 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:43:03.228049 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/antoninsanzovo/.dbt', 'use_colors': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'version_check': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'warn_error': 'None', 'log_path': 'logs', 'introspect': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'debug': 'False', 'invocation_command': 'dbt run', 'no_print': 'None'}
+[0m15:43:03.230278 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/antoninsanzovo/projects/marches_publiques/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:43:03.333293 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.34210026, "process_in_blocks": "0", "process_kernel_time": 0.694999, "process_mem_max_rss": "94310400", "process_out_blocks": "0", "process_user_time": 4.192123}
+[0m15:43:03.335096 [debug] [MainThread]: Command `dbt run` failed at 15:43:03.334749 after 0.34 seconds
+[0m15:43:03.336358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103eb6710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105084160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105085630>]}
+[0m15:43:03.337699 [debug] [MainThread]: Flushing usage events
+[0m15:43:03.976752 [debug] [MainThread]: An error was encountered while trying to flush usage events
