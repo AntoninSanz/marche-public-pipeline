@@ -4,3 +4,5 @@ lxml
 black
 httpx
 asyncio
+boto3
+pandas
