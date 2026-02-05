@@ -4,6 +4,7 @@ import os
 import asyncio
 import httpx
 import boto3
+import json
 import pandas as pd
 from botocore.exceptions import ClientError
 from datetime import timedelta
@@ -57,7 +58,6 @@ async def ingestion_from_data_gouv(DATASET_URL, s3=None, client=None):
     # Iterate dataset and their resources
     for dataset in r["data"]:
         for res in dataset["resources"][:10000]:
-            print(res["url"])
             filename = res["title"]
             # Extract date from filename
             match = re.search(r'(\d{4}-\d{2}-\d{2})', filename)
